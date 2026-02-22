@@ -40,9 +40,9 @@ ApplicationWindow {
                 Item { Layout.fillHeight: true }
 
                 Button {
-                    text: "Logout"
+                    text: "Exit"
                     Layout.fillWidth: true
-                    contentItem: Label { text: "Logout"; horizontalAlignment: Text.AlignHCenter }
+                    onClicked: Qt.quit()
                 }
             }
         }
@@ -65,7 +65,7 @@ ApplicationWindow {
             Loader {
                 id: usersLoader
                 active: root.currentPage === "users"
-                source: "pages/UsersPage.qml"
+                source: "pages/UserListPage.qml"
                 anchors.fill: parent
             }
 
