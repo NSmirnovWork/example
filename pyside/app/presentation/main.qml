@@ -72,7 +72,7 @@ ApplicationWindow {
             Loader {
                 id: ordersLoader
                 active: root.currentPage === "orders"
-                source: "pages/OrdersPage.qml"
+                source: "pages/OrderListPage.qml"
                 anchors.fill: parent
             }
         }
